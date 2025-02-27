@@ -1,0 +1,84 @@
+/* 🎀 Full-Screen Pink Background */
+body {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 📦 White Box with Centered Text */
+.message-box {
+    width: 60%;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(255, 192, 203, 0.8); /* Glowing effect */
+}
+
+/* ✨ Radiant Glowing Text */
+h1 {
+    color: hotpink;
+    text-shadow: 0 0 10px pink, 0 0 20px hotpink, 0 0 30px deeppink;
+}
+
+/* 💖 Signature Styling */
+.signature {
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* 🎈 Balloon Styles */
+.balloon {
+    width: 50px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    animation: floatUp 10s linear infinite;
+}
+
+/* 🌈 Different Balloon Colors & Positions */
+.b1 { background: red; left: 10%; animation-delay: 0s; }
+.b2 { background: blue; left: 25%; animation-delay: 2s; }
+.b3 { background: yellow; left: 40%; animation-delay: 1s; }
+.b4 { background: green; left: 55%; animation-delay: 3s; }
+.b5 { background: purple; left: 70%; animation-delay: 2.5s; }
+.b6 { background: orange; left: 85%; animation-delay: 1.5s; }
+
+/* 🎈 Smooth Floating Animation */
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+/* 🎆 Fireworks */
+.firework {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    animation: explode 1.5s infinite ease-in-out;
+}
+
+/* 🎇 Spaced-Out Fireworks (Everywhere) */
+.f1 { top: 10%; left: 15%; background: red; animation-delay: 0.5s; }
+.f2 { top: 30%; left: 50%; background: blue; animation-delay: 1s; }
+.f3 { top: 50%; left: 80%; background: green; animation-delay: 1.5s; }
+.f4 { top: 70%; left: 20%; background: purple; animation-delay: 2s; }
+.f5 { top: 85%; left: 70%; background: orange; animation-delay: 2.5s; }
+.f6 { top: 60%; left: 35%; background: cyan; animation-delay: 1.8s; }
+.f7 { top: 15%; left: 90%; background: pink; animation-delay: 2.2s; }
+
+/* 🎇 Firework Explosion Animation */
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(5); opacity: 0.5; }
+    100% { transform: scale(8); opacity: 0; }
+}
